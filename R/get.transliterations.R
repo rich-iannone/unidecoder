@@ -31,6 +31,13 @@ get.transliterations <- function(language){
     
     return(transliterations_FR)
   }
+  
+  if (language == "all"){
+    
+    data(transliterations_all)
+    
+    return(transliterations_all)
+  }
 
   # End function
 }
