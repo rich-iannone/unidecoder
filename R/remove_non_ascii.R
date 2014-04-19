@@ -1,6 +1,6 @@
 remove_non_ascii <- function(data,
                              language,
-                             audit_file = TRUE,
+                             changes_file = TRUE,
                              interactive = FALSE){
 
   # Count number of values provided in 'language'
