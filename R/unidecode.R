@@ -8,12 +8,16 @@ unidecode <- function(data,
   
   # Get transliterations into data frame
   for (i in 1:number_of_languages){
+    
+    # Initialize an empty data frame to store all transliteration types
     if (i == 1) transliterations <- data.frame()
+    
+    # Get the transliteration data frame for the language(s) and
+    # succesively bind data frames
     transliterations.gotten <- get.transliterations(language[i])
     transliterations <- rbind(transliterations, transliterations.gotten)
   }
-  
-  
+
   for (i in 1:nrow(transliterations)){
     if (i == 1) {
       data_in <- data
