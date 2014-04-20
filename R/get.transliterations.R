@@ -31,7 +31,22 @@ get.transliterations <- function(language){
     
     return(transliterations_FR)
   }
-  
+
+  if ("Polish" %in% language | "polish" %in% language |
+        "Język Polski" %in% language | "język polski" %in% language |
+        "pl" %in% language | "PL" %in% language){
+    transliterations_PL <-
+      data.frame(from = c("Ą", "ą", "Ć", "ć", "Ę", "ę", "Ł", "ł",
+                          "Ń", "ń", "Ó", "ó", "Ś", "ś", "Ź", "ź",
+                          "Ż", "ż"),
+                 to = c("A", "a", "C", "c", "E", "e", "L", "l",
+                        "N", "n", "O", "o", "S", "s", "Z", "z",
+                        "Z", "z"),
+                 type = rep("PL"), stringsAsFactors = FALSE)
+    
+    return(transliterations_PL)
+  }
+    
   if (language == "all"){
     
     data(transliterations_all)
