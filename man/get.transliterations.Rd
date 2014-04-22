@@ -15,5 +15,6 @@ get.transliterations(language)
 Richard Iannone
 }
 \examples{
-
+# Get the rules for transliterating German into US-ASCII
+get.transliterations("German")
 }
