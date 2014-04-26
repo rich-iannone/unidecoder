@@ -47,6 +47,19 @@ get.transliterations <- function(language){
     return(transliterations_PL)
   }
     
+  if ("Romanian" %in% language | "romanian" %in% language |
+        "ro" %in% language | "RO" %in% language){
+    transliterations_RO <-
+      data.frame(from = c("Ă", "ă", "Â", "â", "Î", "î", "Ș", "ș",
+                          "Ş", "ş", "Ț", "ț", "Ţ", "ţ"),
+                 to = c("A", "a", "A", "a", "I", "i", "S", "s",
+                        "S", "s", "T", "t", "T", "t"),
+                 type = rep("RO"), stringsAsFactors = FALSE)
+    
+    return(transliterations_RO)
+  }
+  
+  
   if (language == "all"){
     
     data(transliterations_all)
