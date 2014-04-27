@@ -61,7 +61,8 @@ get.transliterations <- function(language){
   
   if ("Slovenian" %in% language | "slovenian" %in% language |
         "sl" %in% language | "SL" %in% language){
-    transliterations_RO <-
+
+    transliterations_SL <-
       data.frame(from = c("Č", "č", "Š", "s", "Ž", "ž"),
                  to = c("C", "c", "S", "s", "Z", "z"),
                  type = rep("SL"), stringsAsFactors = FALSE)
