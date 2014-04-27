@@ -3,6 +3,7 @@ get.transliterations <- function(language){
   if ("German" %in% language | "german" %in% language |
         "Deutsch" %in% language | "deutsch" %in% language |
         "DE" %in% language | "de" %in% language){
+
     transliterations_DE <-
       data.frame(from = c("ß", "Ä", "Ö", "Ü", "ä", "ö", "ü"),
                  to = c("ss", "Ae", "Oe", "Ue", "ae", "oe", "ue"),
@@ -14,6 +15,7 @@ get.transliterations <- function(language){
   if ("French" %in% language | "french" %in% language |
         "Français" %in% language | "français" %in% language |
         "fr" %in% language | "FR" %in% language){
+
     transliterations_FR <-
       data.frame(from = c("À", "Á", "Â", "Ä", "Æ", "È", "É", "Ê",
                           "Ë", "Î", "Ï", "Í", "Ì", "Ò", "OŒ", "Ü",
@@ -35,6 +37,7 @@ get.transliterations <- function(language){
   if ("Polish" %in% language | "polish" %in% language |
         "Język Polski" %in% language | "język polski" %in% language |
         "pl" %in% language | "PL" %in% language){
+
     transliterations_PL <-
       data.frame(from = c("Ą", "ą", "Ć", "ć", "Ę", "ę", "Ł", "ł",
                           "Ń", "ń", "Ó", "ó", "Ś", "ś", "Ź", "ź",
