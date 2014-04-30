@@ -48,6 +48,43 @@ get.transliterations <- function(language){
     return(transliterations_DE)
   }
 
+  if ("Greek" %in% language | "greek" %in% language |
+        "GR" %in% language | "gr" %in% language){
+    
+    transliterations_GR <-
+      data.frame(from = c("Α", "α", "Ά", "ά", "Β", "β", "Γ", "γ",
+                          "Δ", "δ", "Ε", "ε", "Έ", "έ", "Ζ", "ζ",
+                          "Η", "η", "Ή", "ή", "Θ", "θ", "Ι", "ι",
+                          "Ί", "ί", "Ϊ",  "ϊ", "ΐ", "Κ", "κ",
+                          "Λ", "λ", "Μ", "μ", "Ν", "ν", "Ξ", "ξ",
+                          "Ο", "ο", "Ό", "ό", "Π", "π", "Ρ", "ρ",
+                          "Σ", "σ", "Τ", "τ", "Υ", "υ", "Ύ", "ύ",
+                          "Ϋ", "ϋ", "ΰ", "Φ", "φ", "Χ", "χ",
+                          "Ψ", "ψ", "Ω", "ω", "Ώ", "ώ", "ς",
+                          ";", ";", "·", "‿", "΄", "΅", "͂", "̓",
+                          "̓", "̔",
+                          "ͅ",
+                          "ει", "έι", "εί", "ευ", "έυ", "εύ",
+                          "ου", "ού", "όυ"), 
+                 to = c("A", "a", "A", "a", "V", "v", "Y", "y",
+                        "D", "d", "E", "e", "E", "e", "Z", "z",
+                        "I", "i", "I", "i", "Th", "th", "I", "i",
+                        "I", "i", "I", "i", "i", "K", "k",
+                        "L", "l", "M", "m", "N", "n", "X", "x",
+                        "O", "o", "O", "o", "P", "p", "R", "r",
+                        "S", "s", "T", "t", "I", "i", "I", "i",
+                        "I", "i", "i", "F", "f", "H", "h",
+                        "Ps", "ps", "O", "o", "O", "o", "s",
+                        "?", "?", ";", "-", "", "", "", "",
+                        "", "",
+                        "",
+                        "i", "i", "i", "ef", "ef", "ef",
+                        "u", "u", "u"),
+                 type = rep("GR"), stringsAsFactors = FALSE)
+    
+    return(transliterations_GR)
+  }
+  
   if ("Polish" %in% language | "polish" %in% language |
         "Język Polski" %in% language | "język polski" %in% language |
         "pl" %in% language | "PL" %in% language){
