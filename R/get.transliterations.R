@@ -1,3 +1,8 @@
+#' Obtain table of transliterations
+#' @description This function returns a data frame with transliterations for a specific language, or, a large default set of transliterations that is language agnostic. The function is primarly called by the 'unidecode' function.
+#' @param language the name of the source language for the text to be processed.
+#' @export get.transliterations
+
 get.transliterations <- function(language){
   
   if ("Czech" %in% language | "czech" %in% language |
