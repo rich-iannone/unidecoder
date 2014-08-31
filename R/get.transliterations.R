@@ -3,7 +3,7 @@
 #' @param language the name of the source language for the text to be processed.
 #' @export get.transliterations
 
-get.transliterations <- function(language){
+get_transliterations <- function(language){
   
   if ("Czech" %in% language | "czech" %in% language |
         "cz" %in% language | "CZ" %in% language){
