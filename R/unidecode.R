@@ -46,18 +46,11 @@ unidecode <- function(data,
                                   stringsAsFactors = FALSE)
         
         changes <- rbind(changes, the_changes)
-        
       }
-      
     }
-    
   }
   
   data_out <- data_in
   
-  
   return(data_out)
-  
-  # End function
 }
-
