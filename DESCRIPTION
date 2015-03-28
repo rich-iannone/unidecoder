@@ -2,10 +2,10 @@ Package: UnidecodeR
 Type: Package
 Title: A port of the Perl Unidecode module for US-ASCII transliterations of
     Unicode text.
-Version: 0.01
-Date: 2014-08-30
+Version: 0.02
+Date: 2015-03-27
 Author: Richard Iannone <riannone@me.com>
 Maintainer: Richard Iannone <riannone@me.com>
 Description: Transform your Unicode-laden text to US-ASCII from a variety of
     source languages.
-License: MIT
+License: MIT + file LICENSE
