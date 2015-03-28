@@ -7,7 +7,7 @@ get_transliterations <- function(language){
   
   if ("Czech" %in% language | "czech" %in% language |
         "cz" %in% language | "CZ" %in% language){
-    transliterations_RO <-
+    transliterations_CZ <-
       data.frame(from = c("Á", "á", "Č", "č", "Ď", "ď", "É", "é",
                           "Ě", "ě", "Í", "í", "Ň", "ň", "Ó", "ó",
                           "Ř", "ř", "Š", "š", "Ť", "ť", "Ú", "ú",
@@ -135,7 +135,5 @@ get_transliterations <- function(language){
     
     return(transliterations_all)
   }
-
-  # End function
 }
 
