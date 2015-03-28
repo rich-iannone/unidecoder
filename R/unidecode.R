@@ -22,7 +22,7 @@ unidecode <- function(data,
     
     # Get the transliteration data frame for the language(s) and
     # succesively bind data frames
-    transliterations.gotten <- get.transliterations(language[i])
+    transliterations.gotten <- get_transliterations(language[i])
     transliterations <- rbind(transliterations, transliterations.gotten)
   }
 
