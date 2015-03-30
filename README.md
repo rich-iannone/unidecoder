@@ -87,7 +87,7 @@ totentanz_ascii <- unidecode(data = totentanz, language = "German")
 cat(totentanz_ascii)
 ```
 
-The resulting text returned after calling the `unidecode` function is:
+The resulting text is returned after calling the `unidecode` function:
 
 ```
 
@@ -149,14 +149,28 @@ The resulting text returned after calling the `unidecode` function is:
   
 ```
 
-So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set.
+So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. The `language` argument allows for a language value in the following forms: language name in English (e.g., German), language name in target language (e.g., Deutsch), and 2-letter language code (e.g., DE).
 
-This can be done for multiple languages. So far, there is support for:
+Transliterations can be done for multiple languages. So far, there is support for:
 
-- Czech
-- French
-- German
-- Greek
-- Polish
-- Romanian
-- Slovenian
+ - Czech (CZ)
+
+```
+
+  Klesla hvězda s nebes výše,	# -> Klesla hvezda s nebes vyse,
+  mrtvá hvězda siný svit;		# -> mrtva hvezda siny svit;
+  padá v neskončené říše		# -> pada v neskoncene rise
+  padá věčně v věčný byt.		# -> pada vecne v vecny byt.
+  Její pláč zní z hrobu všeho,	# -> Jeji plac zni z hrobu vseho,
+  strašný jekot, hrůzný kvíl.	# -> strasny jekot, hruzny kvil.
+  „Kdy dopadne konce svého?“	# -> "Kdy dopadne konce sveho?"
+
+  
+```
+
+- French (FR)
+- German (DE)
+- Greek (GR)
+- Polish (PL)
+- Romanian (RO)
+- Slovenian (SL)
