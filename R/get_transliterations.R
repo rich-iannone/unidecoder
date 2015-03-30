@@ -11,11 +11,11 @@ get_transliterations <- function(language){
       data.frame(from = c("Á", "á", "Č", "č", "Ď", "ď", "É", "é",
                           "Ě", "ě", "Í", "í", "Ň", "ň", "Ó", "ó",
                           "Ř", "ř", "Š", "š", "Ť", "ť", "Ú", "ú",
-                          "Ů", "ů", "Ý", "ý", "Ž", "ž"),
+                          "Ů", "ů", "Ý", "ý", "Ž", "ž", "„", "“"),
                  to = c("A", "a", "C", "c", "D", "d", "E", "e",
                         "E", "e", "I", "i", "N", "n", "O", "o",
                         "R", "r", "S", "s", "T", "t", "U", "u",
-                        "U", "u", "Y", "y", "Z", "z"),
+                        "U", "u", "Y", "y", "Z", "z", "\"", "\""),
                  type = rep("CZ"), stringsAsFactors = FALSE)
     
     return(transliterations_CZ)
