@@ -46,6 +46,8 @@ unidecode <- function(data,
                                   stringsAsFactors = FALSE)
         
         changes <- rbind(changes, the_changes)
+        
+        changes <- changes[with(changes, order(index)), ]
       }
     }
   }
