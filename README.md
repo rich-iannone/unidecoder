@@ -18,62 +18,62 @@ Take, for example, Goethe's *Totentanz* (1813):
 
 ```
 
-	Der Türmer, der schaut zu Mitten der Nacht
-	Hinab auf die Gräber in Lage;
-	Der Mond, der hat alles ins Helle gebracht;
-	Der Kirchhof, er liegt wie am Tage.
-	Da regt sich ein Grab und ein anderes dann:
-	Sie kommen hervor, ein Weib da, ein Mann,
-	In weißen und schleppenden Hemden.
-	 
-	Das reckt nun, es will sich ergetzen sogleich,
-	Die Knöchel zur Runde, zum Kranze,
-	So arm und so jung, und so alt und so reich;
-	Doch hindern die Schleppen am Tanze.
-	Und weil hier die Scham nun nicht weiter gebeut,
-	Sie schütteln sich alle, da liegen zerstreut
-	Die Hemdlein über den Hügeln.
-	 
-	Nun hebt sich der Schenkel, nun wackelt das Bein,
-	Gebärden da gibt es vertrackte;
-	Dann klippert's und klappert's mitunter hinein,
-	Als schlüg' man die Hölzlein zum Takte.
-	Das kommt nun dem Türmer so lächerlich vor;
-	Da raunt ihm der Schalk, der Versucher, ins Ohr:
-	Geh! hole dir einen der Laken.
-	 
-	Getan wie gedacht! und er flüchtet sich schnell
-	Nun hinter geheiligte Türen.
-	Der Mond, und noch immer er scheinet so hell
-	Zum Tanz, den sie schauderlich führen.
-	Doch endlich verlieret sich dieser und der,
-	Schleicht eins nach dem andern gekleidet einher,
-	Und, husch, ist es unter dem Rasen.
-	 
-	Nur einer, der trippelt und stolpert zuletzt
-	Und tappet und grapst an den Grüften;
-	Doch hat kein Geselle so schwer ihn verletzt,
-	Er wittert das Tuch in den Lüften.
-	Er rüttelt die Turmtür, sie schlägt ihn zurück,
-	Geziert und gesegnet, dem Türmer zum Glück,
-	Sie blinkt von metallenen Kreuzen.
-	 
-	Das Hemd muß er haben, da rastet er nicht,
-	Da gilt auch kein langes Besinnen,
-	Den gotischen Zierat ergreift nun der Wicht
-	Und klettert von Zinne zu Zinnen.
-	Nun ist's um den armen, den Türmer getan!
-	Es ruckt sich von Schnörkel zu Schnörkel hinan,
-	Langbeinigen Spinnen vergleichbar.
-	 
-	Der Türmer erbleichet, der Türmer erbebt,
-	Gern gäb er ihn wieder, den Laken.
-	Da häkelt—jetzt hat er am längsten gelebt—
-	Den Zipfel ein eiserner Zacken.
-	Schon trübet der Mond sich verschwindenden Scheins,
-	Die Glocke, sie donnert ein mächtiges Eins,
-	Und unten zerschellt das Gerippe.
-	
+  Der Türmer, der schaut zu Mitten der Nacht
+  Hinab auf die Gräber in Lage;
+  Der Mond, der hat alles ins Helle gebracht;
+  Der Kirchhof, er liegt wie am Tage.
+  Da regt sich ein Grab und ein anderes dann:
+  Sie kommen hervor, ein Weib da, ein Mann,
+  In weißen und schleppenden Hemden.
+   
+  Das reckt nun, es will sich ergetzen sogleich,
+  Die Knöchel zur Runde, zum Kranze,
+  So arm und so jung, und so alt und so reich;
+  Doch hindern die Schleppen am Tanze.
+  Und weil hier die Scham nun nicht weiter gebeut,
+  Sie schütteln sich alle, da liegen zerstreut
+  Die Hemdlein über den Hügeln.
+   
+  Nun hebt sich der Schenkel, nun wackelt das Bein,
+  Gebärden da gibt es vertrackte;
+  Dann klippert's und klappert's mitunter hinein,
+  Als schlüg' man die Hölzlein zum Takte.
+  Das kommt nun dem Türmer so lächerlich vor;
+  Da raunt ihm der Schalk, der Versucher, ins Ohr:
+  Geh! hole dir einen der Laken.
+   
+  Getan wie gedacht! und er flüchtet sich schnell
+  Nun hinter geheiligte Türen.
+  Der Mond, und noch immer er scheinet so hell
+  Zum Tanz, den sie schauderlich führen.
+  Doch endlich verlieret sich dieser und der,
+  Schleicht eins nach dem andern gekleidet einher,
+  Und, husch, ist es unter dem Rasen.
+   
+  Nur einer, der trippelt und stolpert zuletzt
+  Und tappet und grapst an den Grüften;
+  Doch hat kein Geselle so schwer ihn verletzt,
+  Er wittert das Tuch in den Lüften.
+  Er rüttelt die Turmtür, sie schlägt ihn zurück,
+  Geziert und gesegnet, dem Türmer zum Glück,
+  Sie blinkt von metallenen Kreuzen.
+   
+  Das Hemd muß er haben, da rastet er nicht,
+  Da gilt auch kein langes Besinnen,
+  Den gotischen Zierat ergreift nun der Wicht
+  Und klettert von Zinne zu Zinnen.
+  Nun ist's um den armen, den Türmer getan!
+  Es ruckt sich von Schnörkel zu Schnörkel hinan,
+  Langbeinigen Spinnen vergleichbar.
+   
+  Der Türmer erbleichet, der Türmer erbebt,
+  Gern gäb er ihn wieder, den Laken.
+  Da häkelt—jetzt hat er am längsten gelebt—
+  Den Zipfel ein eiserner Zacken.
+  Schon trübet der Mond sich verschwindenden Scheins,
+  Die Glocke, sie donnert ein mächtiges Eins,
+  Und unten zerschellt das Gerippe.
+
 ```
 
 Written in German, it contains umlaut letters and the ß character, all of which are not part of the US-ASCII character set. To process this text, read the lines into R.
@@ -225,7 +225,6 @@ Goethe's *Auf Dem See* (1775)
 
 ```
 
-
 #### Greek (GR)
 
 Giorgos Seferis's *The King of Asine* (1938)
@@ -245,4 +244,72 @@ Giorgos Seferis's *The King of Asine* (1938)
 
 ```
 
+### Polish (PL)
+
+Szymborska Wisława's *Utopia* (1976)
+
+```
+
+  Wyspa na której wszystko się wyjaśnia.    # -> Wyspa na ktorej wszystko sie wyjasnia.
+  Tu można stanąć na gruncie dowodów.       # -> Tu mozna stanac na gruncie dowodow.
+  Nie ma dróg innych oprócz drogi dojścia.  # -> Nie ma drog innych oprocz drogi dojscia.
+  Krzaki aż uginają się od odpowiedzi.      # -> Krzaki az uginaja sie od odpowiedzi.
+  
+  Rośnie tu drzewo Słusznego Domysłu        # -> Rosnie tu drzewo Slusznego Domyslu
+  o rozwikłanych wiecznie gałęziach.        # -> o rozwiklanych wiecznie galeziach.
+  
+  Olśniewająco proste drzewo Zrozumienia    # -> Olsniewajaco proste drzewo Zrozumienia
+  przy źródle, co się zwie Ach Więc To Tak. # -> przy zrodle, co sie zwie Ach Wiec To Tak.
+
+```
+
+### Romanian (RO)
+
+George Coşbuc's *Crăiasa zânelor* (1893)
+
+```
+
+  Orcanul însuşi stă domol      # -> Orcanul insusi sta domol
+  Şi-n gânduri dulci se pierde, # -> Si-n ganduri dulci se pierde,
+  Când zânele cu pieptul gol    # -> Cand zanele cu pieptul gol
+  Răsar pe lunca verde.         # -> Rasar pe lunca verde.
+  Uşoare, ca de neguri, fug     # -> Usoare, ca de neguri, fug
+  Prin liniştea adâncă,         # -> Prin linistea adanca,
+  Obrajii lor, ca flori de rug, # -> Obrajii lor, ca flori de rug,
+  Sunt nesărutaţi încă.         # -> Sunt nesarutati inca.
+
+  Vezi tu departe-n Răsărit     # -> Vezi tu departe-n Rasarit
+  Aprins lucind ca focul        # -> Aprins lucind ca focul
+  Palatul lor? Împrejmuit       # -> Palatul lor? Imprejmuit
+  Cu zid d-argint e locul:      # -> Cu zid d-argint e locul:
+  Acolo ele-n veci nu mor       # -> Acolo ele-n veci nu mor
+  Şi vara-n veci nu moare,      # -> Si vara-n veci nu moare,
+  Iar ele-şi au crăiasa lor     # -> Iar ele-si au craiasa lor
+  Şi toate sunt fecioare.       # -> Si toate sunt fecioare.
+
+```
+
+### Slovenian (SL)
+
+France Prešeren's *Prošnja* (1834)
+
+```
+
+  Po drugih se oziraj,      # -> Po drugih se oziraj,
+  ne morem ti branít;       # -> ne morem ti branit;
+  še men' oči odpiraj,      # -> se men' oci odpiraj,
+  mi gledat daj njih svit!  # -> mi gledat daj njih svit!
+  Obešajo glavíce,          # -> Obesajo glavice,
+  ni rožam mar cvetét;      # -> ni rozam mar cvetet;
+  molčijo v gójzdi tice,    # -> molcijo v gojzdi tice,
+  ne ljubi se jim pét'.     # -> ne ljubi se jim pet'.
+
+  Ne letajo čebele,         # -> Ne letajo cebele,
+  krog cvetja ne šumé;      # -> krog cvetja ne sume;
+  c'lo ribice vesele        # -> c'lo ribice vesele
+  se klavrno držé.          # -> se klavrno drze.
+
+```
+
+       
 
