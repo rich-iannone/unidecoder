@@ -10,9 +10,11 @@ Install **UnidecodeR** from GitHub using the **devtools** package.
 devtools::install_github('rich-iannone/UnidecodeR')
 ```
 
-### Examples
+### How to Use **UnidecodeR**
 
-Take, for example, Goethe's *Totentanz*:
+Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Czech (CZ), French (FR), German (DE), Greek (GR), Polish (PL), Romanian (RO), Slovenian (SL).
+
+Take, for example, Goethe's *Totentanz* (1813):
 
 ```
 
@@ -151,26 +153,96 @@ The resulting text is returned after calling the `unidecode` function:
 
 So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. The `language` argument allows for a language value in the following forms: language name in English (e.g., German), language name in target language (e.g., Deutsch), and 2-letter language code (e.g., DE).
 
-Transliterations can be done for multiple languages. So far, there is support for:
+### Incredible Poetry, and How It Can All Be Unidecoded
 
- - Czech (CZ)
+#### Czech (CZ)
+
+Karel Hynek Mácha's *Máj* (1836)
 
 ```
 
-  Klesla hvězda s nebes výše,	# -> Klesla hvezda s nebes vyse,
-  mrtvá hvězda siný svit;		# -> mrtva hvezda siny svit;
-  padá v neskončené říše		# -> pada v neskoncene rise
-  padá věčně v věčný byt.		# -> pada vecne v vecny byt.
-  Její pláč zní z hrobu všeho,	# -> Jeji plac zni z hrobu vseho,
-  strašný jekot, hrůzný kvíl.	# -> strasny jekot, hruzny kvil.
-  „Kdy dopadne konce svého?“	# -> "Kdy dopadne konce sveho?"
+  Klesla hvězda s nebes výše,   # -> Klesla hvezda s nebes vyse,
+  mrtvá hvězda siný svit;       # -> mrtva hvezda siny svit;
+  padá v neskončené říše        # -> pada v neskoncene rise
+  padá věčně v věčný byt.       # -> pada vecne v vecny byt.
+  Její pláč zní z hrobu všeho,  # -> Jeji plac zni z hrobu vseho,
+  strašný jekot, hrůzný kvíl.   # -> strasny jekot, hruzny kvil.
+  „Kdy dopadne konce svého?“    # -> "Kdy dopadne konce sveho?"
 
+```
+
+#### French (FR)
+
+Charles Baudelaire's *Tout entière* (1857)
+
+```
+
+  Le Démon, dans ma chambre haute       # -> Le Demon, dans ma chambre haute
+  Ce matin est venu me voir,            # -> Ce matin est venu me voir,
+  Et, tâchant à me prendre en faute     # -> Et, tachant a me prendre en faute
+  Me dit: «Je voudrais bien savoir      # -> Me dit: "Je voudrais bien savoir
+  Parmi toutes les belles choses        # -> Parmi toutes les belles choses
+  Dont est fait son enchantement,       # -> Dont est fait son enchantement,
+  Parmi les objets noirs ou roses       # -> Parmi les objets noirs ou roses
+  Qui composent son corps charmant,     # -> Qui composent son corps charmant,
+  Quel est le plus doux.» — Ô mon âme!  # -> Quel est le plus doux." — O mon ame!
+  Tu répondis à l'Abhorré:              # -> Tu repondis a l'Abhorre:
+  «Puisqu'en Elle tout est dictame      # -> "Puisqu'en Elle tout est dictame
+  Rien ne peut être préféré.            # -> Rien ne peut etre prefere.
+
+```
+
+#### German (DE)
+
+Goethe's *Auf Dem See* (1775)
+
+```
+
+  Und frische Nahrung, neues Blut       # -> Und frische Nahrung, neues Blut
+  Saug ich aus freier Welt:             # -> Saug ich aus freier Welt:
+  Wie ist Natur so hold und gut,        # -> Wie ist Natur so hold und gut,
+  Die mich am Busen hält!               # -> Die mich am Busen haelt!
   
+  Die Welle wieget unsern Kahn          # -> Die Welle wieget unsern Kahn
+  Im Rudertakt hinauf,                  # -> Im Rudertakt hinauf,
+  Und Berge, wolkig himmelan,           # -> Und Berge, wolkig himmelan,
+  Begegnen unserm Lauf.                 # -> Begegnen unserm Lauf.
+  
+  Aug, mein Aug, was sinkst du nieder?  # -> Aug, mein Aug, was sinkst du nieder?
+  Goldne Träume, kommt ihr wieder?      # -> Goldne Traeume, kommt ihr wieder?
+  Weg, du Traum! so gold du bist:       # -> Weg, du Traum! so gold du bist:
+  Hier auch Lieb und Leben ist.         # -> Hier auch Lieb und Leben ist.
+  
+  Auf der Welle blinken                 # -> Auf der Welle blinken
+  Tausend schwebende Sterne,            # -> Tausend schwebende Sterne,
+  Weiche Nebel trinken                  # -> Weiche Nebel trinken
+  Rings die türmende Ferne;             # -> Rings die tuermende Ferne;
+  
+  Morgenwind umflügelt                  # -> Morgenwind umfluegelt
+  Die beschattete Bucht,                # -> Die beschattete Bucht,
+  Und im See bespiegelt                 # -> Und im See bespiegelt
+  Sich die reifende Frucht.             # -> Sich die reifende Frucht.
+
 ```
 
-- French (FR)
-- German (DE)
-- Greek (GR)
-- Polish (PL)
-- Romanian (RO)
-- Slovenian (SL)
+
+#### Greek (GR)
+
+Giorgos Seferis's *The King of Asine* (1938)
+
+```
+
+  Κοιτάξαμε όλο το πρωί γύρω-γύρω το κάστρο              % -> Koitaxame olo to proi yiro-yiro to kastro
+  αρχίζοντας από το μέρος του ίσκιου εκεί που η θάλασσα  % -> arhizontas apo to meros toi iskioi ekei poi i thalassa
+  πράσινη και χωρίς αναλαμπή, το στήθος σκοτωμένου       % -> prasini kai horis analampi, to stithos skotomenoi
+  παγονιού                                               % -> payonioi
+  Μας δέχτηκε όπως ο καιρός χωρίς κανένα χάσμα.          % -> Mas dehtike opos o kairos horis kanena hasma.
+  Οι φλέβες του βράχου κατέβαιναν από ψηλά               % -> Oi fleves toi vrahoi katevainan apo psila
+  στριμμένα κλήματα γυμνά πολύκλωνα ζωντανεύοντας        % -> strimmena klimata yimna poliklona zontaneiontas
+  στ άγγιγμα του νερού, καθώς το μάτι ακολουθώυτας τις   % -> st ayyiyma toi neroi, kathos to mati akoloithoitas tis
+  πάλευε να ξεφύγει το κουραστικό λίκνισμα               % -> paleie na xefiyei to koirastiko liknisma
+  χάνοντας δύναμη ολοένα.                                % -> hanontas dinami oloena.
+
+```
+
+
