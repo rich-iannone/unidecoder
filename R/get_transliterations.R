@@ -122,8 +122,8 @@ get_transliterations <- function(language){
         "sl" %in% language | "SL" %in% language){
 
     transliterations_SL <-
-      data.frame(from = c("Č", "č", "Š", "s", "Ž", "ž"),
-                 to = c("C", "c", "S", "s", "Z", "z"),
+      data.frame(from = c("Č", "č", "É", "é", "Š", "š", "Ž", "ž"),
+                 to = c("C", "c", "E", "e", "S", "s", "Z", "z"),
                  type = rep("SL"), stringsAsFactors = FALSE)
     
     return(transliterations_SL)
