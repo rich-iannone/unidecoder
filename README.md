@@ -76,7 +76,7 @@ Take, for example, Goethe's *Totentanz* (1813):
 
 ```
 
-Written in German, it contains umlaut letters and the ß character, all of which are not part of the US-ASCII character set. To process this text, read the lines into R.
+Written in German, it contains umlaut letters and the ß character, all of which are not part of the US-ASCII character set. To process this text, read the lines into an **R** object and call the `unidecode` function with `language = "German"`.
 
 ```R
 # Read the poem from the file 'Totentanz.txt' in '/inst/examples/'
@@ -89,7 +89,7 @@ totentanz_ascii <- unidecode(data = totentanz, language = "German")
 cat(totentanz_ascii)
 ```
 
-The resulting text is returned after calling the `unidecode` function:
+The resulting text transliteration is returned:
 
 ```
 
@@ -151,7 +151,7 @@ The resulting text is returned after calling the `unidecode` function:
   
 ```
 
-So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. The `language` argument allows for a language value in the following forms: language name in English (e.g., German), language name in target language (e.g., Deutsch), and 2-letter language code (e.g., DE).
+So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. Moreover, this is the expected transliteration that's in wide use. The `language` argument accepts the following formats: language name in English (e.g., German), language name in target language (e.g., Deutsch), and 2-letter language code (e.g., DE).
 
 ### Incredible Poetry, and How It Can All Be Unidecoded
 
@@ -311,5 +311,6 @@ France Prešeren's *Prošnja* (1834)
 
 ```
 
-       
+### What's Next
 
+Transliterations for more languages will be added over time. Also, there will be an option to obtain basic reporting of the changes made to the input text from the `unidecode` function.
