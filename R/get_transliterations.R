@@ -3,7 +3,7 @@
 #' @param language the name of the source language for the text to be processed.
 #' @export get_transliterations
 
-get_transliterations <- function(language = c("czech", "cz",
+get_transliterations <- function(language = c("czech", "čeština", "český jazyk", "cz",
                                               "french", "français", "fr",
                                               "german", "deutsch", "de",
                                               "greek", "ελληνικά",  "el",
@@ -15,7 +15,7 @@ get_transliterations <- function(language = c("czech", "cz",
   language <- tolower(language)
   language <- match.arg(language, several.ok = TRUE)
 
-  if (any(c("czech", "cz") %in% language)){
+  if (any(c("czech", "čeština", "český jazyk", "cz") %in% language)){
     transliterations_CZ <-
       data.frame(from = c("Á", "á", "Č", "č", "Ď", "ď", "É", "é",
                           "Ě", "ě", "Í", "í", "Ň", "ň", "Ó", "ó",
