@@ -43,6 +43,8 @@ unidecode <- function(data,
         
         from_word <- gsub("\\W", "", from_word)
         
+        to_word <- gsub(from, to, from_word)
+        
         data_in[j] <- gsub(from, to, data_in[j])
       
         the_changes <- data.frame(type = transliterations[i, 3],
