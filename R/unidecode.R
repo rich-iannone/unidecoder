@@ -48,6 +48,7 @@ unidecode <- function(data,
                                   index = j,
                                   from_chars = from,
                                   to_chars = to,
+                                  from_word = word_translit,
                                   stringsAsFactors = FALSE)
         
         changes <- rbind(changes, the_changes)
