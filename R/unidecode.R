@@ -28,7 +28,7 @@ unidecode <- function(data,
     if (i == 1) {
       data_in <- data
       changes <- as.data.frame(mat.or.vec(nc = 4, nr = 0))
-      colnames(changes) <- c("type", "index", "from", "to")
+      colnames(changes) <- c("type", "index", "from_chars", "to_chars")
     }
     
     from <- transliterations[i, 1]
@@ -40,8 +40,8 @@ unidecode <- function(data,
         data_in[j] <- gsub(from, to, data_in[j])
         the_changes <- data.frame(type = transliterations[i, 3],
                                   index = j,
-                                  from = from,
-                                  to = to,
+                                  from_chars = from,
+                                  to_chars = to,
                                   stringsAsFactors = FALSE)
         
         changes <- rbind(changes, the_changes)
