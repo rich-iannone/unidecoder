@@ -49,8 +49,8 @@ unidecode <- function(data,
       
         the_changes <- data.frame(type = transliterations[i, 3],
                                   index = j,
-                                  from_chars = from,
-                                  to_chars = to,
+                                  from_char = from,
+                                  to_char = to,
                                   from_word = from_word,
                                   stringsAsFactors = FALSE)
         
