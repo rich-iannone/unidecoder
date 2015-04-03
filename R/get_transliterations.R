@@ -6,7 +6,7 @@
 get_transliterations <- function(language = c("czech", "cz",
                                               "french", "français", "fr",
                                               "german", "deutsch", "de",
-                                              "greek", "gr",
+                                              "greek", "ελληνικά",  "el",
                                               "polish", "język polski", "pl",
                                               "romanian", "ro",
                                               "slovenian", "sl",
@@ -56,7 +56,7 @@ get_transliterations <- function(language = c("czech", "cz",
     return(transliterations_DE)
   }
 
-  if (any(c("greek", "gr") %in% language)){
+  if (any(c("greek", "ελληνικά",  "el") %in% language)){
     transliterations_GR <-
       data.frame(from = c("Α", "α", "Ά", "ά", "Β", "β", "Γ", "γ",
                           "Δ", "δ", "Ε", "ε", "Έ", "έ", "Ζ", "ζ",
