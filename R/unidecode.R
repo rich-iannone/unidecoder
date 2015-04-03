@@ -38,9 +38,9 @@ unidecode <- function(data,
       
       if (grepl(from, data_in[j]) == TRUE){
         
-        word_translit <- grep(from, unlist(strsplit(data_in[j], " ")), value = TRUE)
+        from_word <- grep(from, unlist(strsplit(data_in[j], " ")), value = TRUE)
         
-        word_translit <- gsub("\\W", "", word_translit)
+        from_word <- gsub("\\W", "", from_word)
         
         data_in[j] <- gsub(from, to, data_in[j])
       
@@ -48,7 +48,7 @@ unidecode <- function(data,
                                   index = j,
                                   from_chars = from,
                                   to_chars = to,
-                                  from_word = word_translit,
+                                  from_word = from_word,
                                   stringsAsFactors = FALSE)
         
         changes <- rbind(changes, the_changes)
