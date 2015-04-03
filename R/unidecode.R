@@ -8,7 +8,6 @@
 unidecode <- function(data,
                       language,
                       changes_file = TRUE,
-                      interactive = FALSE){
   
   # Count number of values provided in 'language'
   number_of_languages <- length(language)
