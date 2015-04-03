@@ -2,7 +2,7 @@
 #' @description Transliterate strings from containing Unicode text to ascii text.
 #' @param data a vector of character data.
 #' @param language the name of the source language for the text to be processed.
-#' @param changes_file determines whether a text file with the changes made during text processing should be generated.
+#' @param changes_df determines whether a text file with the changes made during text processing should be generated.
 #' @export unidecode
 
 unidecode <- function(data,
