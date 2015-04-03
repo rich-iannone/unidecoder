@@ -40,7 +40,8 @@ unidecode <- function(data,
         data_in[j] <- gsub(from, to, data_in[j])
         the_changes <- data.frame(type = transliterations[i, 3],
                                   index = j,
-                                  change = paste(from, " -> ", to, sep = ''),
+                                  from = from,
+                                  to = to,
                                   stringsAsFactors = FALSE)
         
         changes <- rbind(changes, the_changes)
