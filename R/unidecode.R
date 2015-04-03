@@ -47,6 +47,7 @@ unidecode <- function(data,
         changes <- rbind(changes, the_changes)
         
         changes <- changes[with(changes, order(index)), ]
+        rownames(changes) <- NULL
       }
     }
   }
