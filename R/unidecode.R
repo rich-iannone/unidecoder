@@ -37,7 +37,13 @@ unidecode <- function(data,
     for (j in 1:length(data_in)){
       
       if (grepl(from, data_in[j]) == TRUE){
+        
+        word_translit <- grep(from, unlist(strsplit(data_in[j], " ")), value = TRUE)
+        
+        word_translit <- gsub("\\W", "", word_translit)
+        
         data_in[j] <- gsub(from, to, data_in[j])
+      
         the_changes <- data.frame(type = transliterations[i, 3],
                                   index = j,
                                   from_chars = from,
