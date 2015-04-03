@@ -3,7 +3,6 @@
 #' @param data a vector of character data.
 #' @param language the name of the source language for the text to be processed.
 #' @param changes_file determines whether a text file with the changes made during text processing should be generated.
-#' @param interactive a choice of whether the function should be performed using an interactive mode. If TRUE, all potential transliterations will be summarized and presented and then individual changes can be made.
 #' @export unidecode
 
 unidecode <- function(data,
