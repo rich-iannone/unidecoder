@@ -54,5 +54,13 @@ unidecode <- function(data,
   
   data_out <- data_in
   
-  return(data_out)
+  if (changes_df == FALSE){
+    return(data_out)
+  }
+  
+  if (changes_df == TRUE){
+    out_changes <- list("translit_text" = data_out, "translit_changes" = changes)
+    return(out_changes)
+  }
+  
 }
