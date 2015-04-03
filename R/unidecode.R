@@ -27,8 +27,8 @@ unidecode <- function(data,
   for (i in 1:nrow(transliterations)){
     if (i == 1) {
       data_in <- data
-      changes <- as.data.frame(mat.or.vec(nc = 3, nr = 0))
-      colnames(changes) <- c("type", "index", "change")
+      changes <- as.data.frame(mat.or.vec(nc = 4, nr = 0))
+      colnames(changes) <- c("type", "index", "from", "to")
     }
     
     from <- transliterations[i, 1]
