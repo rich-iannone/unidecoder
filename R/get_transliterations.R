@@ -3,19 +3,19 @@
 #' @param language the name of the source language for the text to be processed.
 #' @export get_transliterations
 
-get_transliterations <- function(language = c("czech", "čeština", "český jazyk", "cz",
+get_transliterations <- function(language = c("czech", "čeština", "český jazyk", "cs",
                                               "french", "français", "fr",
-                                              "german", "deutsch", "de",
+                                              "german", "deutsch", "deutsche Sprache", "de",
                                               "greek", "ελληνικά",  "el",
                                               "polish", "język polski", "pl",
-                                              "romanian", "ro",
-                                              "slovenian", "sl",
+                                              "romanian", "limba română", "ro",
+                                              "slovene", "slovenian", "slovenski jezik", "slovenščina", "sl",
                                               "all")){
 
   language <- tolower(language)
   language <- match.arg(language, several.ok = TRUE)
 
-  if (any(c("czech", "čeština", "český jazyk", "cz") %in% language)){
+  if (any(c("czech", "čeština", "český jazyk", "cs") %in% language)){
     transliterations_CZ <-
       data.frame(from = c("Á", "á", "Č", "č", "Ď", "ď", "É", "é",
                           "Ě", "ě", "Í", "í", "Ň", "ň", "Ó", "ó",
@@ -47,7 +47,7 @@ get_transliterations <- function(language = c("czech", "čeština", "český jaz
     return(transliterations_FR)
   }
 
-  if (any(c("german", "deutsch", "de") %in% language)){
+  if (any(c("german", "deutsch", "deutsche Sprache" "de") %in% language)){
     transliterations_DE <-
       data.frame(from = c("ß", "Ä", "Ö", "Ü", "ä", "ö", "ü"),
                  to = c("ss", "Ae", "Oe", "Ue", "ae", "oe", "ue"),
@@ -104,7 +104,7 @@ get_transliterations <- function(language = c("czech", "čeština", "český jaz
     return(transliterations_PL)
   }
 
-  if (any(c("romanian", "ro") %in% language)){
+  if (any(c("romanian", "limba română", "ro") %in% language)){
     transliterations_RO <-
       data.frame(from = c("Ă", "ă", "Â", "â", "Î", "î", "Ș", "ș",
                           "Ş", "ş", "Ț", "ț", "Ţ", "ţ"),
@@ -115,7 +115,7 @@ get_transliterations <- function(language = c("czech", "čeština", "český jaz
     return(transliterations_RO)
   }
 
-  if (any(c("slovenian", "sl") %in% language)){
+  if (any(c("slovene", "slovenian", "slovenski jezik", "slovenščina", "sl") %in% language)){
     transliterations_SL <-
       data.frame(from = c("Č", "č", "É", "é", "Í", "í", "Ó", "ó",
                           "Š", "š", "Ž", "ž"),
