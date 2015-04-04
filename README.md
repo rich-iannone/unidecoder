@@ -158,7 +158,7 @@ Und unten zerschellt das Gerippe.
 
 ```
 
-So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. Moreover, this is the expected transliteration that's in wide use. The `language` argument accepts the following formats: language name in English (e.g., German), language name in target language (e.g., Deutsch), and 2-letter language code (e.g., DE).
+So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. Moreover, this is the expected transliteration that's in wide use. The `language` argument accepts the following formats: language name in English (e.g., German), the native language name (e.g., Deutsch), and ISO 639-1 language code (e.g., de).
 
 ### Incredible Poetry, and How It Can All Be Unidecoded
 
