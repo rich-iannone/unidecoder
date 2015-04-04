@@ -12,7 +12,7 @@ devtools::install_github('rich-iannone/UnidecodeR')
 
 ### How to Use **UnidecodeR**
 
-Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Czech, French, German, Greek, Polish, Romanian, Slovenian.
+Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Czech, French, German, Greek, Polish, Romanian, Russian, and Slovenian.
 
 Take, for example, Goethe's *Totentanz* (1813):
 
