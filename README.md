@@ -162,7 +162,7 @@ So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text t
 
 ### Incredible Poetry, and How It Can All Be Unidecoded
 
-#### Czech (CZ)
+#### Czech // čeština, český jazyk // cs
 
 Karel Hynek Mácha's *Máj* (1836)
 
@@ -178,7 +178,7 @@ strašný jekot, hrůzný kvíl.   # -> strasny jekot, hruzny kvil.
 
 ```
 
-#### French (FR)
+#### French // français // fr
 
 Charles Baudelaire's *Tout entière* (1857)
 
@@ -199,7 +199,7 @@ Rien ne peut être préféré.            # -> Rien ne peut etre prefere.
 
 ```
 
-#### German (DE)
+#### German // Deutsch, deutsche Sprache // de
 
 Goethe's *Auf Dem See* (1775)
 
@@ -232,7 +232,7 @@ Sich die reifende Frucht.             # -> Sich die reifende Frucht.
 
 ```
 
-#### Greek (GR)
+#### Greek // ελληνικά // el
 
 Giorgos Seferis's *The King of Asine* (1938)
 
@@ -251,7 +251,7 @@ Giorgos Seferis's *The King of Asine* (1938)
 
 ```
 
-### Polish (PL)
+### Polish // język polski // pl
 
 Szymborska Wisława's *Utopia* (1976)
 
@@ -270,7 +270,7 @@ przy źródle, co się zwie Ach Więc To Tak. # -> przy zrodle, co sie zwie Ach 
 
 ```
 
-### Romanian (RO)
+### Romanian // limba română // ro
 
 George Coşbuc's *Crăiasa zânelor* (1893)
 
@@ -296,7 +296,7 @@ Iar ele-şi au crăiasa lor     # -> Iar ele-si au craiasa lor
 
 ```
 
-### Slovenian (SL)
+### Slovenian // slovenski jezik, slovenščina // sl
 
 France Prešeren's *Prošnja* (1834)
 
