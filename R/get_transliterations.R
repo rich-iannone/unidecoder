@@ -47,7 +47,7 @@ get_transliterations <- function(language = c("czech", "čeština", "český jaz
     return(transliterations_fr)
   }
 
-  if (any(c("german", "deutsch", "deutsche Sprache" "de") %in% language)){
+  if (any(c("german", "deutsch", "deutsche Sprache", "de") %in% language)){
     transliterations_de <-
       data.frame(from = c("ß", "Ä", "Ö", "Ü", "ä", "ö", "ü"),
                  to = c("ss", "Ae", "Oe", "Ue", "ae", "oe", "ue"),
