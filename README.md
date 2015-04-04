@@ -86,7 +86,7 @@ library("UnidecodeR")
 download("https://raw.githubusercontent.com/rich-iannone/UnidecodeR/master/inst/examples/Totentanz__de.txt",
   "Totentanz__de.txt")
 
-# Read the poem from the file 'Totentanz__DE.txt'
+# Read the poem from the file 'Totentanz__de.txt'
 totentanz <- readLines("Totentanz__de.txt")
 
 # Replace the Unicode characters with US-ASCII replacements       
