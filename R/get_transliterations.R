@@ -9,6 +9,7 @@ get_transliterations <- function(language = c("czech", "čeština", "český jaz
                                               "greek", "ελληνικά",  "el",
                                               "polish", "język polski", "pl",
                                               "romanian", "limba română", "ro",
+                                              "russian", "русский язык", "ru",
                                               "slovene", "slovenian", "slovenski jezik", "slovenščina", "sl",
                                               "all")){
 
@@ -115,6 +116,29 @@ get_transliterations <- function(language = c("czech", "čeština", "český jaz
     return(transliterations_ro)
   }
 
+  if (any(c("russian", "русский язык", "ru") %in% language)){
+    transliterations_ru <-
+      data.frame(from = c("Б", "б", "В", "в", "Г", "г", "Д", "д",
+                          "Ё", "ё", "Ж", "ж", "З", "з", "И", "и",
+                          "Й", "й", "К", "к", "Л", "л", "М", "м",
+                          "Н", "н", "О", "о", "П", "п", "Р", "р",
+                          "С", "с", "Т", "т", "У", "у", "Ф", "ф",
+                          "Х", "х", "Ц", "ц", "Ч", "ч", "Ш", "ш",
+                          "Щ", "щ", "Ъ", "ъ", "Ы", "ы", "Ь", "ь",
+                          "Э", "э", "Ю", "ю", "Я", "я"),
+                 to = c("B", "b", "V", "v", "G", "g", "D", "d",
+                        "Yo", "yo", "Zh", "zh", "Z", "z", "I", "i",
+                        "J", "j", "K", "k", "L", "l", "M", "m",
+                        "N", "n", "O", "o", "P", "p", "R", "r",
+                        "C", "c", "T", "t", "U", "u", "F", "f",
+                        "Kh", "kh", "Cz", "cz", "Ch", "ch", "Sh", "sh",
+                        "Shh", "shh", "\"", "\"", "Y'", "y'", "'", "'",
+                        "E'", "e'", "Yu", "yu", "Ya", "ya"),
+                 type = rep("ru"), stringsAsFactors = FALSE)
+    
+    return(transliterations_ru)
+  }
+  
   if (any(c("slovene", "slovenian", "slovenski jezik", "slovenščina", "sl") %in% language)){
     transliterations_sl <-
       data.frame(from = c("Č", "č", "É", "é", "Í", "í", "Ó", "ó",
