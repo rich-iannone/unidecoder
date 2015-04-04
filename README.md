@@ -296,6 +296,26 @@ Iar ele-şi au crăiasa lor     # -> Iar ele-si au craiasa lor
 
 ```
 
+### Russian // русский язык // ru
+
+Mikhail Lermontov's *Valerik* (1843)
+
+```
+
+И знать вам также нету нужды,  # -> I znаt' vаm tаkzhе nеtu nuzhdy'
+Где я? что я? в какой глуши?   # -> Gdе ya? chto ya? v kаkoj glushi?
+Душою мы друг другу чужды,     # -> Dushoyu my' drug drugu chuzhdy',
+Да вряд ли есть родство души.  # -> Dа vryad li еct' rodctvo dushi.
+Страницы прошлого читая,       # -> Ctrаniczy' proshlogo chitаya,
+Их по порядку разбирая         # -> Ikh po poryadku rаzbirаya
+Теперь остынувшим умом,        # -> Tеpеr' octy'nuvshim umom,
+Разуверяюсь я во всем.         # -> Rаzuvеryayuc' ya vo vcеm.
+Смешно же сердцем лицемерить   # -> Cmеshno zhе cеrdczеm liczеmеrit'
+Перед собою столько лет;       # -> Pеrеd coboyu ctol'ko lеt;
+Добро б еще морочить свет!     # -> Dobro b еshhе morochit' cvеt!
+
+```
+
 ### Slovenian // slovenski jezik, slovenščina // sl
 
 France Prešeren's *Prošnja* (1834)
