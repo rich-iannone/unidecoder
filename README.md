@@ -83,11 +83,11 @@ library("downloader")
 library("UnidecodeR")
 
 # Download some Goethe
-download("https://raw.githubusercontent.com/rich-iannone/UnidecodeR/master/inst/examples/Totentanz__DE.txt",
-  "Totentanz__DE.txt")
+download("https://raw.githubusercontent.com/rich-iannone/UnidecodeR/master/inst/examples/Totentanz__de.txt",
+  "Totentanz__de.txt")
 
 # Read the poem from the file 'Totentanz__DE.txt'
-totentanz <- readLines("Totentanz__DE.txt")
+totentanz <- readLines("Totentanz__de.txt")
 
 # Replace the Unicode characters with US-ASCII replacements       
 totentanz_ascii <- unidecode(data = totentanz, language = "German")
