@@ -39,7 +39,7 @@ unidecode <- function(data,
       
       if (grepl(from, data_in[j]) == TRUE){
         
-        from_word <- grep(from, unlist(strsplit(data_in[j], " ")), value = TRUE)
+        from_word <- grep(from, unlist(strsplit(data[j], " ")), value = TRUE)
         
         from_word <- gsub("\\W", "", from_word)
         
