@@ -17,16 +17,28 @@ get_transliterations <- function(language = c("bulgarian", "български �
   language <- tolower(language)
   language <- match.arg(language, several.ok = TRUE)
 
+  
+  # Bulgarian -- Streamlined system (2006) with -ia-exception
   if (any(c("bulgarian", "български език", "bǎlgarski ezik", "bg") %in% language)){
     transliterations_bg <-
-      data.frame(from = c("а", "б", "в", "г", "д", "е", "з", "и",
-                          "к", "л", "м", "н", "о", "п", "р", "с",
-                          "т", "тс", "ф", "ж", "ч", "ш", "щ", "ц",
-                          "х", "й", "ю", "я", "ь", "у", "ъ"),
-                 to = c("a", "b", "v", "g", "d", "e", "z", "i",
-                        "k", "l", "m", "n", "o", "p", "r", "s",
-                        "t", "t", "f", "zh", "ch", "sh", "sht", "ts",
-                        "kh", "y", "yu", "ya", "y", "u", "a"),
+      data.frame(from = c("България",
+                          "А", "а", "Б", "б", "В", "в", "Г", "г",
+                          "Д", "д", "Е", "е", "З", "з", "И", "и",
+                          "К", "к", "Л", "л", "М", "м", "Н", "н",
+                          "О", "о", "П", "п", "Р", "р", "С", "с",
+                          "Т", "т", "тс", "Ф", "ф", "Ж", "ж", "Ч",
+                          "ч", "Ш", "ш", "Щ", "щ", "Ц", "ц", "Х",
+                          "х", "Й", "й", "Ю", "ю", "Я", "я", "Ь",
+                          "ь", "У", "у", "Ъ", "ъ"),
+                 to = c("Bulgaria",
+                        "A", "a", "B", "b", "V", "v", "G", "g",
+                        "D", "d", "E", "e", "Z", "z", "I", "i",
+                        "K", "k", "L", "l", "M", "m", "N", "n",
+                        "O", "o", "P", "p", "R", "r", "S", "s",
+                        "T", "t", "t", "F", "f", "Zh", "zh", "Ch",
+                        "ch", "Sh", "sh", "Sht", "sht", "Ts", "ts", "Kh",
+                        "kh", "Y", "y", "Yu", "yu", "Ya", "ya", "Y",
+                        "y", "U", "u", "A", "a"),
                  type = rep("bg"), stringsAsFactors = FALSE)
     
     return(transliterations_bg)
