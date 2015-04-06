@@ -21,10 +21,12 @@ get_transliterations <- function(language = c("bulgarian", "български �
     transliterations_bg <-
       data.frame(from = c("а", "б", "в", "г", "д", "е", "з", "и",
                           "к", "л", "м", "н", "о", "п", "р", "с",
-                          "т", "ф"),
+                          "т", "тс", "ф", "ж", "ч", "ш", "щ", "ц",
+                          "х", "й", "ю", "я", "ь", "у", "ъ"),
                  to = c("a", "b", "v", "g", "d", "e", "z", "i",
                         "k", "l", "m", "n", "o", "p", "r", "s",
-                        "t", "f"),
+                        "t", "t", "f", "zh", "ch", "sh", "sht", "ts",
+                        "kh", "y", "yu", "ya", "y", "u", "a"),
                  type = rep("bg"), stringsAsFactors = FALSE)
     
     return(transliterations_bg)
