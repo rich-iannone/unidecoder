@@ -3,7 +3,8 @@
 #' @param language the name of the source language for the text to be processed.
 #' @export get_transliterations
 
-get_transliterations <- function(language = c("czech", "čeština", "český jazyk", "cs",
+get_transliterations <- function(language = c("bulgarian", "български език", "bǎlgarski ezik", "bg",
+                                              "czech", "čeština", "český jazyk", "cs",
                                               "french", "français", "fr",
                                               "german", "deutsch", "deutsche Sprache", "de",
                                               "greek", "ελληνικά",  "el",
@@ -16,6 +17,19 @@ get_transliterations <- function(language = c("czech", "čeština", "český jaz
   language <- tolower(language)
   language <- match.arg(language, several.ok = TRUE)
 
+  if (any(c("bulgarian", "български език", "bǎlgarski ezik", "bg") %in% language)){
+    transliterations_bg <-
+      data.frame(from = c("а", "б", "в", "г", "д", "е", "з", "и",
+                          "к", "л", "м", "н", "о", "п", "р", "с",
+                          "т", "ф"),
+                 to = c("a", "b", "v", "g", "d", "e", "z", "i",
+                        "k", "l", "m", "n", "o", "p", "r", "s",
+                        "t", "f"),
+                 type = rep("bg"), stringsAsFactors = FALSE)
+    
+    return(transliterations_bg)
+  }
+  
   if (any(c("czech", "čeština", "český jazyk", "cs") %in% language)){
     transliterations_cs <-
       data.frame(from = c("Á", "á", "Č", "č", "Ď", "ď", "É", "é",
