@@ -12,7 +12,7 @@ devtools::install_github('rich-iannone/UnidecodeR')
 
 ### How to Use **UnidecodeR**
 
-Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Czech, French, German, Greek, Polish, Romanian, Russian, and Slovenian.
+Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Bulgarian, Czech, French, German, Greek, Polish, Romanian, Russian, and Slovenian.
 
 Take, for example, Goethe's *Totentanz* (1813):
 
@@ -161,6 +161,34 @@ Und unten zerschellt das Gerippe.
 So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. Moreover, this is the expected transliteration that's in wide use. The `language` argument accepts the following formats: language name in English (e.g., German), the native language name (e.g., Deutsch), and ISO 639-1 language code (e.g., de).
 
 ### Incredible Poetry, and How It Can All Be Unidecoded
+
+#### Bulgarian // български език, bǎlgarski ezik // bg
+
+Hristo Botev's *Hadji Dimiter* (1873)
+
+```
+
+Жив е той, жив е! Там на Балкана,    # -> Zhiv e toy, zhiv e! Tam na Balkana,
+потънал в кърви, лежи и пъшка        # -> potanal v karvi, lezhi i pashka
+юнак с дълбока на гърди рана,        # -> yunak s dalboka na gardi rana,
+юнак във младост и в сила мъжка.     # -> yunak vav mladost i v sila mazhka.
+ 
+На една страна захвърлил пушка,      # -> Na edna strana zahvarlil pushka,
+на друга сабля на две строшена;      # -> na druga sablya na dve stroshena;
+очи темнеят, глава се люшка,         # -> ochi temneyat, glava se lyushka,
+уста проклинат цяла вселена!         # -> usta proklinat tsyala vselena!
+ 
+Лежи юнакът, а на небето             # -> Lezhi yunakat, a na nebeto
+слънцето спряно сърдито пече;        # -> slantseto spryano sardito peche;
+жътварка пее нейде в полето,         # -> zhatvarka pee neyde v poleto,
+и кръвта още по-силно тече!          # -> i kravta oshte po-silno teche!
+ 
+Жътва е сега... Пейте, робини,       # -> Zhatva e sega... Peyte, robini,
+тез тъжни песни! Грей и ти, слънце,  # -> tez tazhni pesni! Grey i ti, slantse,
+в таз робска земя! Ще да загине      # -> v taz robska zemya! Shte da zagine
+и тоя юнак... Но млъкни, сърце!      # -> i toya yunak... No mlakni, sartse!
+
+```
 
 #### Czech // čeština, český jazyk // cs
 
