@@ -234,14 +234,14 @@ Giorgi Leonidze's *Q'ivchaghis P'aemani* (1928)
 ```
 
 ქსანზედ არაგვზედ ისევ ყვავიან  # -> ksanzed aragvzed isev q'vavian
-ხოდაბუნები თავთუხებისა       # -> khodabunebi tavtukhebisa
-შენი ტუჩებიც ისე ტკბილია,     # -> sheni t'uchebits ise t'k'bilia,
-როგორც ბადაგი დადუღებისას. # -> rogorts badagi dadughebisas.
+ხოდაბუნები თავთუხებისა          # -> khodabunebi tavtukhebisa
+შენი ტუჩებიც ისე ტკბილია,       # -> sheni t'uchebits ise t'k'bilia,
+როგორც ბადაგი დადუღებისას.      # -> rogorts badagi dadughebisas.
 
-ხოხბობას გნახე მიწურვილ იყო, # -> khokhbobas gnakhe mits'urvil iq'o,
-როცა ზაფხული რუსთაველისა   # -> rotsa zapkhuli rustavelisa
-ნეტამც ბადაგი არ დამელია      # -> net'amts badagi ar damelia
-და იმ დღეს ხმალი არ ამელესა. # -> da im dghes khmali ar amelesa.
+ხოხბობას გნახე მიწურვილ იყო,    # -> khokhbobas gnakhe mits'urvil iq'o,
+როცა ზაფხული რუსთაველისა        # -> rotsa zapkhuli rustavelisa
+ნეტამც ბადაგი არ დამელია        # -> net'amts badagi ar damelia
+და იმ დღეს ხმალი არ ამელესა.    # -> da im dghes khmali ar amelesa.
 
 ```
 
