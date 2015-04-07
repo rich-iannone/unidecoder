@@ -6,6 +6,7 @@
 get_transliterations <- function(language = c("bulgarian", "български език", "bǎlgarski ezik", "bg",
                                               "czech", "čeština", "český jazyk", "cs",
                                               "french", "français", "fr",
+                                              "georgian", "kartuli", "ქართული", "ka",
                                               "german", "deutsch", "deutsche Sprache", "de",
                                               "greek", "ελληνικά",  "el",
                                               "polish", "język polski", "pl",
@@ -76,6 +77,24 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_fr)
   }
 
+  # Georgian -- National system for romanization (2002)
+  if (any(c("georgian", "kartuli", "ქართული", "ka") %in% language)){
+    transliterations_ka <-
+      data.frame(from = c("ა", "ბ", "გ", "დ", "ე", "ვ", "ზ", "თ",
+                          "ი", "კ", "ლ", "მ", "ნ", "ო", "პ", "ჟ",
+                          "რ", "ს", "ტ", "უ", "ფ", "ქ", "ღ", "ყ",
+                          "შ", "ჩ", "ც", "ძ", "წ", "ჭ", "ხ", "ჯ",
+                          "ჰ"),
+                 to = c("a", "b", "g", "d", "e", "v", "z", "t",
+                        "i", "k'", "l", "m", "n", "o", "p'", "zh",
+                        "r", "s", "t'", "zh", "r", "s", "t'", "u",
+                        "p", "k", "gh", "q'", "sh", "ch", "ts", "dz",
+                        "ts'", "ch'", "kh", "j", "h"),
+                 type = rep("ka"), stringsAsFactors = FALSE)
+
+    return(transliterations_ka)
+  }
+  
   if (any(c("german", "deutsch", "deutsche Sprache", "de") %in% language)){
     transliterations_de <-
       data.frame(from = c("ß", "Ä", "Ö", "Ü", "ä", "ö", "ü"),
