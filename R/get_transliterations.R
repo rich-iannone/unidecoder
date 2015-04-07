@@ -87,9 +87,9 @@ get_transliterations <- function(language = c("bulgarian", "български �
                           "ჰ"),
                  to = c("a", "b", "g", "d", "e", "v", "z", "t",
                         "i", "k'", "l", "m", "n", "o", "p'", "zh",
-                        "r", "s", "t'", "zh", "r", "s", "t'", "u",
-                        "p", "k", "gh", "q'", "sh", "ch", "ts", "dz",
-                        "ts'", "ch'", "kh", "j", "h"),
+                        "r", "s", "t'", "u", "p", "k", "gh", "q'",
+                        "sh", "ch", "ts", "dz", "ts'", "ch'", "kh", "j",
+                        "h"),
                  type = rep("ka"), stringsAsFactors = FALSE)
 
     return(transliterations_ka)
