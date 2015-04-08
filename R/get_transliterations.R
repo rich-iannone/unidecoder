@@ -45,6 +45,8 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_bg)
   }
   
+  # Czech -- Simple mapping of characters with diacritics to the
+  #          same character without a diacritic
   if (any(c("czech", "čeština", "český jazyk", "cs") %in% language)){
     transliterations_cs <-
       data.frame(from = c("Á", "á", "Č", "č", "Ď", "ď", "É", "é",
@@ -60,6 +62,8 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_cs)
   }
 
+  # French -- Simple mapping of characters with diacritics to the
+  #           same character without a diacritic
   if (any(c("french", "français", "fr") %in% language)){
     transliterations_fr <-
       data.frame(from = c("À", "Á", "Â", "Ä", "Æ", "È", "É", "Ê",
@@ -95,6 +99,9 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_ka)
   }
   
+  # German -- Common transliteration of German Umlauts
+  #           See Duden - Band 1: "Die deutsche Rechtschreibung", Mannheim, 2001,
+  #           p. 105f., "Maschinenschreiben und E-Mails"
   if (any(c("german", "deutsch", "deutsche Sprache", "de") %in% language)){
     transliterations_de <-
       data.frame(from = c("ß", "Ä", "Ö", "Ü", "ä", "ö", "ü"),
@@ -104,6 +111,8 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_de)
   }
 
+  # Greek -- Phonetic transcription into latin characters as there is
+  #          no authoritive standard
   if (any(c("greek", "ελληνικά",  "el") %in% language)){
     transliterations_el <-
       data.frame(from = c("Α", "α", "Ά", "ά", "Β", "β", "Γ", "γ",
@@ -139,6 +148,8 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_el)
   }
 
+  # Polish -- Simple mapping of characters with diacritics to the
+  #           same character without a diacritic
   if (any(c("polish", "język polski", "pl") %in% language)){
     transliterations_pl <-
       data.frame(from = c("Ą", "ą", "Ć", "ć", "Ę", "ę", "Ł", "ł",
@@ -152,6 +163,8 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_pl)
   }
 
+  # Romanian -- Simple mapping of characters with diacritics to the
+  #             same character without a diacritic
   if (any(c("romanian", "limba română", "ro") %in% language)){
     transliterations_ro <-
       data.frame(from = c("Ă", "ă", "Â", "â", "Î", "î", "Ș", "ș",
@@ -163,6 +176,7 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_ro)
   }
 
+  # Russian
   if (any(c("russian", "русский язык", "ru") %in% language)){
     transliterations_ru <-
       data.frame(from = c("Б", "б", "В", "в", "Г", "г", "Д", "д",
@@ -186,6 +200,8 @@ get_transliterations <- function(language = c("bulgarian", "български �
     return(transliterations_ru)
   }
   
+  # Slovenian -- Simple mapping of characters with diacritics to the
+  #              same character without a diacritic
   if (any(c("slovene", "slovenian", "slovenski jezik", "slovenščina", "sl") %in% language)){
     transliterations_sl <-
       data.frame(from = c("Č", "č", "É", "é", "Í", "í", "Ó", "ó",
