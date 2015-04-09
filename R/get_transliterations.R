@@ -3,7 +3,8 @@
 #' @param language the name of the source language for the text to be processed.
 #' @export get_transliterations
 
-get_transliterations <- function(language = c("bulgarian", "български език", "bǎlgarski ezik", "bg",
+get_transliterations <- function(language = c("Armenian", "հայերէն", "հայերեն", "hayeren", "hy",
+                                              "bulgarian", "български език", "bǎlgarski ezik", "bg",
                                               "czech", "čeština", "český jazyk", "cs",
                                               "french", "français", "fr",
                                               "georgian", "kartuli", "ქართული", "ka",
@@ -18,6 +19,33 @@ get_transliterations <- function(language = c("bulgarian", "български �
   language <- tolower(language)
   language <- match.arg(language, several.ok = TRUE)
 
+  # Armenian -- Informal ASCII transliteration of Classical or Eastern Armenian
+  if (any(c("Armenian", "հայերէն", "հայերեն", "hayeren", "hy") %in% language)){
+    transliterations_hy <-
+      data.frame(from = c("Ա", "ա", "Բ", "բ", "Գ", "գ", "Դ", "դ",
+                          "Ե", "ե", "Զ", "զ", "Է", "է", "Ը", "ը",
+                          "Թ", "թ", "Ժ", "ժ", "Ի", "ի", "Լ", "լ",
+                          "Խ", "խ", "Ծ", "ծ", "Կ", "կ", "Հ", "հ",
+                          "Ձ", "ձ", "Ղ", "ղ", "Ճ", "ճ", "Մ", "մ",
+                          "Յ", "յ", "Ն", "ն", "Շ", "շ", "Ո", "ո",
+                          "Չ", "չ", "Պ", "պ", "Ջ", "ջ", "Ռ", "ռ",
+                          "Ս", "ս", "Վ", "վ", "Տ", "տ", "Ր", "ր",
+                          "Ց", "ց", "Ւ", "ւ", "Փ", "փ", "Ք", "ք",
+                          "Օ", "օ", "Ֆ", "ֆ", "ՈՒ", "ու", "և"),
+                 to = c("A", "a", "B", "b", "G", "g", "D", "d",
+                        "E", "e", "Z", "z", "E'", "e'", "Y'", "y'",
+                        "T'", "t'", "Zh", "zh", "I", "i", "L", "l",
+                        "X", "x", "C'", "c'", "K", "k", "H", "h",
+                        "Dz", "dz", "Gh", "gh", "Tw", "tw", "M", "m",
+                        "Y", "y", "N", "n", "Sh", "sh", "Vo", "vo",
+                        "Ch", "ch", "P", "p", "J", "j", "Rr", "rr",
+                        "S", "s", "V", "v", "T", "t", "R", "r",
+                        "C", "c", "W", "w", "P'", "p'", "K'", "k'",
+                        "O", "o", "F", "f", "U", "U", "ev"),
+  	             type = rep("hy"), stringsAsFactors = FALSE)
+    
+    return(transliterations_hy)
+  }
   
   # Bulgarian -- Streamlined system (2006) with -ia-exception
   if (any(c("bulgarian", "български език", "bǎlgarski ezik", "bg") %in% language)){
