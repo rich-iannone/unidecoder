@@ -3,7 +3,7 @@
 #' @param language the name of the source language for the text to be processed.
 #' @export get_transliterations
 
-get_transliterations <- function(language = c("Armenian", "հայերէն", "հայերեն", "hayeren", "hy",
+get_transliterations <- function(language = c("armenian", "հայերէն", "հայերեն", "hayeren", "hy",
                                               "bulgarian", "български език", "bǎlgarski ezik", "bg",
                                               "czech", "čeština", "český jazyk", "cs",
                                               "danish", "dansk", "da",
@@ -21,7 +21,7 @@ get_transliterations <- function(language = c("Armenian", "հայերէն", "հ�
   language <- match.arg(language, several.ok = TRUE)
 
   # Armenian -- Informal ASCII transliteration of Classical or Eastern Armenian
-  if (any(c("Armenian", "հայերէն", "հայերեն", "hayeren", "hy") %in% language)){
+  if (any(c("armenian", "հայերէն", "հայերեն", "hayeren", "hy") %in% language)){
     transliterations_hy <-
       data.frame(from = c("Ա", "ա", "Բ", "բ", "Գ", "գ", "Դ", "դ",
                           "Ե", "ե", "Զ", "զ", "Է", "է", "Ը", "ը",
