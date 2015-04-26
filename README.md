@@ -12,7 +12,7 @@ devtools::install_github('rich-iannone/UnidecodeR')
 
 ### How to Use **UnidecodeR**
 
-Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Bulgarian, Czech, French, Georgian, German, Greek, Polish, Romanian, Russian, and Slovenian.
+Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Armenian, Bulgarian, Czech, Danish, French, Georgian, German, Greek, Polish, Romanian, Russian, and Slovenian.
 
 Take, for example, Goethe's *Totentanz* (1813):
 
@@ -76,7 +76,7 @@ Und unten zerschellt das Gerippe.
 
 ```
 
-Written in German, it contains umlaut letters and the ß character, all of which are not part of the US-ASCII character set. To process this text, read the lines into an **R** object and call the `unidecode` function with `language = "German"`.
+Written in German, it contains umlaut letters and the ß character, all of which are not part of the US-ASCII character set. To process this text, read the lines into an **R** object and call the `unidecode` function with `language = "German"` or `language = "de"`.
 
 ```R
 library("downloader")
