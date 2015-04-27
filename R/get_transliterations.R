@@ -96,8 +96,10 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
   #           diacritics
   if (any(c("danish", "dansk", "da") %in% language)){
     transliterations_da <-
-      data.frame(from = c("Æ", "æ", "Ø", "ø", "Å", "å"),
-                 to = c("Ae", "ae", "Oe", "oe", "Aa", "aa"),
+      data.frame(from = c("Æ", "æ", "Ø", "ø", "Å", "å",
+                          "»", "«"),
+                 to = c("Ae", "ae", "Oe", "oe", "Aa", "aa",
+                        "\"", "\""),
                  type = rep("da"), stringsAsFactors = FALSE)
     
     return(transliterations_da)
