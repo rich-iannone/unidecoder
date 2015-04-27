@@ -94,7 +94,7 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
   # Danish -- Simple mapping of ligature characters and those with
   #           diacritics
   if (any(c("danish", "dansk", "da") %in% language)){
-    transliterations_cs <-
+    transliterations_da <-
       data.frame(from = c("Æ", "æ", "Ø", "ø", "Å", "å"),
                  to = c("Ae", "ae", "Oe", "oe", "Aa", "aa"),
                  type = rep("da"), stringsAsFactors = FALSE)
