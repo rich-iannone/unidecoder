@@ -11,6 +11,7 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
                                               "georgian", "kartuli", "ქართული", "ka",
                                               "german", "deutsch", "deutsche Sprache", "de",
                                               "greek", "ελληνικά",  "el",
+                                              "norwegian", "norsk", "no",
                                               "polish", "język polski", "pl",
                                               "romanian", "limba română", "ro",
                                               "russian", "русский язык", "ru",
@@ -188,6 +189,23 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
     return(transliterations_el)
   }
 
+  # Norwegian -- Simple mapping of ligature characters and those with
+  #              diacritics
+  if (any(c("norwegian", "norsk", "no") %in% language)){
+    transliterations_no <-
+      data.frame(from = c("Æ", "æ", "Ø", "ø", "Å", "å",
+                          "É", "é", "È", "è", "Ê", "ê",
+                          "Ó", "ó", "Ò", "ò", "Â", "â",
+                          "Ô", "ô"),
+                 to = c("Ae", "ae", "Oe", "oe", "Aa", "aa",
+                        "E", "e", "E", "e", "E", "e",
+                        "O", "o", "O", "o", "A", "a",
+                        "O", "o"),
+                 type = rep("no"), stringsAsFactors = FALSE)
+    
+    return(transliterations_no)
+  }
+  
   # Polish -- Simple mapping of characters with diacritics to the
   #           same character without a diacritic
   if (any(c("polish", "język polski", "pl") %in% language)){
