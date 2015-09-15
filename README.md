@@ -1,13 +1,13 @@
 <img src="inst/UnidecodeR.png" width="100%">
 
-While Unicode characters are undeniably important, there can be occasions where you need text only in US-ASCII format. This is where the **R** package **UnidecodeR** can help. Provide text to **UnidecodeR** and it will replace accented letters, ligatures, and other Unicode characters with US-ASCII equivalents.
+While Unicode characters are undeniably important, there can be occasions where you need text only in US-ASCII format. This is where the **R** package **UnidecodeR** can help. If you provide text to **UnidecodeR** along with the input language, it will replace accented letters, ligatures, and other Unicode characters with US-ASCII equivalents.
 
 ### Installation
 
 Install **UnidecodeR** from GitHub using the **devtools** package.
 
 ```R
-devtools::install_github('rich-iannone/UnidecodeR')
+devtools::install_github("rich-iannone/UnidecodeR")
 ```
 
 ### How to Use **UnidecodeR**
