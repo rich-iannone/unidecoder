@@ -11,6 +11,7 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
                                               "georgian", "kartuli", "ქართული", "ka",
                                               "german", "deutsch", "deutsche Sprache", "de",
                                               "greek", "ελληνικά",  "el",
+                                              "hungarian", "magyar", "hu",
                                               "norwegian", "norsk", "no",
                                               "polish", "język polski", "pl",
                                               "romanian", "limba română", "ro",
@@ -191,6 +192,30 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
     return(transliterations_el)
   }
 
+  # Hungarian -- Simple mapping of characters with diacritics into the
+  #              same character without a diacritic. This includes chars
+  #              used to represent double acutes in unconventional ways, 
+  #              e.g. using a chapeau or a tilde.
+  #              The a with umlaut (ä/Ä) is not quintessentially a Hungarian
+  #              linguistic feature, but it does occur very frequently in names
+  #              of geographic features and personalities to this date, and is
+  #              therefore included.
+  if (any(c("hungarian", "magyar", "hu") %in% language)){
+    transliterations_hu <- 
+      data.frame(from = c("Á", "á", "Ä", "ä", "É", "é",
+                          "Í", "í", "Ó", "ó", "Ő", "ő",
+                          "Ô", "ô", "Õ", "õ", "Ú", "ú",
+                          "Ű", "ű", "Û", "Ũ", "ũ"),
+                 to = c("A", "a", "A", "a", "E", "e", 
+                        "I", "i", "O", "o", "O", "o", 
+                        "O", "o", "O", "O", "U", "u", 
+                        "U", "u", "U", "U", "u"),
+                 type = rep("hu"), stringsAsFactors = FALSE)
+    return(transliterations_hu) 
+  }
+    
+  
+  
   # Norwegian -- Simple mapping of ligature characters and those with
   #              diacritics
   if (any(c("norwegian", "norsk", "no") %in% language)){

@@ -297,6 +297,26 @@ Giorgos Seferis's *The King of Asine* (1938)
 
 ```
 
+### Hungarian // magyar // hu
+
+Sándor Márai's *Hol vagyok? (Where am I?)* (1972)
+
+```
+
+Ülök a padon, nézem az eget                           % -> Ulok a padon, nezem az eget. 
+A Central Park nem a Margitsziget.                    % -> A Central Park nem a Margitsziget.
+Milyen szép az élet, - kapok, amit kérek.             % -> Milyen szep az elet, - kapok, amit kerek.
+Milyen furcsa íze van itt a kenyérnek.                % -> Milyen furcsa ize van itt a kenyernek.
+Micsoda házak és micsoda utak!                        % -> Micsoda hazak es micsoda utak!
+Vajon, hogy hívják most a Károly körutat?             % -> Vajon, hogy hivjak most a Karoly korutat?
+Micsoda nép! - az iramot bírják.                      % -> Micsoda nep! - az iramot birjak.
+Vajon ki ápolja szegény Mama sírját?                  % -> Vajon ki apolja szegeny Mama sirjat?
+Izzik a levegő, a Nap ragyog.                         % -> Izzik a levego, a Nap ragyog.
+Szent Isten! - hol vagyok?                            % -> Szent Isten! - hol vagyok?
+
+```
+
+
 ### Polish // język polski // pl
 
 Szymborska Wisława's *Utopia* (1976)
