@@ -211,7 +211,7 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
                         "E", "e",
                         "I", "i",
                         "O", "o", "O", "o", "O", "o", "O", "o", "O", "o",
-                        "U", "u", "U", "u", "U", "u", "U", "u"),
+                        "U", "u", "U", "u", "U", "u", "U", "u", "U", "u"),
                  type = rep("hu"), stringsAsFactors = FALSE)
     return(transliterations_hu) 
   }
