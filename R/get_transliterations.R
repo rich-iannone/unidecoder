@@ -202,14 +202,16 @@ get_transliterations <- function(language = c("armenian", "հայերէն", "հ�
   #              therefore included.
   if (any(c("hungarian", "magyar", "hu") %in% language)){
     transliterations_hu <- 
-      data.frame(from = c("Á", "á", "Ä", "ä", "É", "é",
-                          "Í", "í", "Ó", "ó", "Ő", "ő",
-                          "Ô", "ô", "Õ", "õ", "Ú", "ú",
-                          "Ű", "ű", "Û", "Ũ", "ũ"),
-                 to = c("A", "a", "A", "a", "E", "e", 
-                        "I", "i", "O", "o", "O", "o", 
-                        "O", "o", "O", "O", "U", "u", 
-                        "U", "u", "U", "U", "u"),
+      data.frame(from = c("Á", "á", "Ä", "ä", "Ã", "ã", 
+                          "É", "é",
+                          "Í", "í", 
+                          "Ó", "ó", "Ö", "ö", "Ő", "ő", "Ô", "ô", "Õ", "õ", 
+                          "Ú", "ú", "Ü", "ü", "Ű", "ű", "Û", "û", "Ũ", "ũ"),
+                 to = c("A", "a", "A", "a", "A", "a",
+                        "E", "e",
+                        "I", "i",
+                        "O", "o", "O", "o", "O", "o", "O", "o", "O", "o",
+                        "U", "u", "U", "u", "U", "u", "U", "u", "U", "u"),
                  type = rep("hu"), stringsAsFactors = FALSE)
     return(transliterations_hu) 
   }
