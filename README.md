@@ -1,18 +1,18 @@
-<img src="inst/UnidecodeR.png" width="100%">
+<img src="inst/unidecoder.png" width="100%">
 
-While Unicode characters are undeniably important, there can be occasions where you need text only in US-ASCII format. This is where the **R** package **UnidecodeR** can help. If you provide text to **UnidecodeR** along with the input language, it will replace accented letters, ligatures, and other Unicode characters with US-ASCII equivalents.
+While Unicode characters are undeniably important, there can be occasions where you need text only in US-ASCII format. This is where the **R** package **unidecoder** can help. If you provide text to **unidecoder** along with the input language, it will replace accented letters, ligatures, and other Unicode characters with US-ASCII equivalents.
 
 ### Installation
 
-Install **UnidecodeR** from GitHub using the **devtools** package.
+Install **unidecoder** from GitHub using the **devtools** package.
 
-```R
-devtools::install_github("rich-iannone/UnidecodeR")
+```r
+devtools::install_github("rich-iannone/unidecoder")
 ```
 
-### How to Use **UnidecodeR**
+### How to Use **unidecoder**
 
-Use the **UnidecodeR** package's main function `unidecode` to transform text to ASCII. The function takes in a vector of strings and replaces unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages. So far, there is support for: Armenian, Bulgarian, Czech, Danish, French, Georgian, German, Greek, Norwegian, Polish, Romanian, Russian, and Slovenian.
+Use the **unidecoder** package's function `unidecode()` to transform text to ASCII. The function takes in a vector of strings and replaces Unicode characters with their best equivalents. Knowing which equivalents are best depends on providing the source language for the input text. Transliterations can be accomplished for several languages: Armenian, Bulgarian, Czech, Danish, French, Georgian, German, Greek, Norwegian, Polish, Romanian, Russian, and Slovenian.
 
 Take, for example, Goethe's *Totentanz* (1813):
 
@@ -76,14 +76,14 @@ Und unten zerschellt das Gerippe.
 
 ```
 
-Written in German, it contains umlaut letters and the ß character, all of which are not part of the US-ASCII character set. To process this text, read the lines into an **R** object and call the `unidecode` function with `language = "German"` or `language = "de"`.
+Written in German, it contains letters with umlauts and the ß character, all of which are not part of the US-ASCII character set. To process this text, read the lines into an **R** object and call the `unidecode()` function with `language = "German"` or `language = "de"`.
 
 ```R
 library("downloader")
-library("UnidecodeR")
+library("unidecoder")
 
 # Download some Goethe
-download("https://raw.githubusercontent.com/rich-iannone/UnidecodeR/master/inst/examples/Totentanz__de.txt",
+download("https://raw.githubusercontent.com/rich-iannone/unidecoder/main/inst/examples/Totentanz__de.txt",
   "Totentanz__de.txt")
 
 # Read the poem from the file 'Totentanz__de.txt'
@@ -160,7 +160,7 @@ Und unten zerschellt das Gerippe.
 
 So, words like `Knöchel` were transliterated to `Knoechel`, resulting in text that is entirely in the US-ASCII character set. Moreover, this is the expected transliteration that's in wide use. The `language` argument accepts the following formats: language name in English (e.g., German), the native language name (e.g., Deutsch), and ISO 639-1 language code (e.g., de).
 
-### Incredible Poetry, and How It Can All Be Unidecoded
+### Unidecoding in Other Languages
 
 #### Bulgarian // български език, bǎlgarski ezik // bg
 
@@ -297,7 +297,7 @@ Giorgos Seferis's *The King of Asine* (1938)
 
 ```
 
-### Hungarian // magyar // hu
+#### Hungarian // magyar // hu
 
 Sándor Márai's *Hol vagyok? (Where am I?)* (1972)
 
@@ -316,8 +316,7 @@ Szent Isten! - hol vagyok?                            % -> Szent Isten! - hol va
 
 ```
 
-
-### Polish // język polski // pl
+#### Polish // język polski // pl
 
 Szymborska Wisława's *Utopia* (1976)
 
@@ -336,7 +335,7 @@ przy źródle, co się zwie Ach Więc To Tak. # -> przy zrodle, co sie zwie Ach 
 
 ```
 
-### Romanian // limba română // ro
+#### Romanian // limba română // ro
 
 George Coşbuc's *Crăiasa zânelor* (1893)
 
@@ -362,7 +361,7 @@ Iar ele-şi au crăiasa lor     # -> Iar ele-si au craiasa lor
 
 ```
 
-### Russian // русский язык // ru
+#### Russian // русский язык // ru
 
 Mikhail Lermontov's *Valerik* (1843)
 
@@ -382,7 +381,7 @@ Mikhail Lermontov's *Valerik* (1843)
 
 ```
 
-### Slovenian // slovenski jezik, slovenščina // sl
+#### Slovenian // slovenski jezik, slovenščina // sl
 
 France Prešeren's *Prošnja* (1834)
 
@@ -403,7 +402,3 @@ c'lo ribice vesele        # -> c'lo ribice vesele
 se klavrno držé.          # -> se klavrno drze.
 
 ```
-
-### What's Next
-
-Transliterations for more languages will be added over time. Also, there will be an option to obtain basic reporting of the changes made to the input text from the `unidecode` function.
