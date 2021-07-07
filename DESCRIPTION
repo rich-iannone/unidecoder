@@ -1,11 +1,19 @@
-Package: UnidecodeR
 Type: Package
-Title: A port of the Perl Unidecode module for US-ASCII transliterations of
-    Unicode text.
-Version: 0.02
-Date: 2015-03-27
-Author: Richard Iannone <riannone@me.com>
-Maintainer: Richard Iannone <riannone@me.com>
+Package: unidecoder
+Version: 0.2.0.9000
+Title: Get US-ASCII transliterations of Unicode text
 Description: Transform your Unicode-laden text to US-ASCII from a variety of
     source languages.
+Authors@R: c(
+    person("Richard", "Iannone", , "riannone@me.com", c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3925-190X"))
+    )
 License: MIT + file LICENSE
+URL: https://github.com/rich-iannone/unidecoder
+BugReports: https://github.com/rich-iannone/unidecoder/issues
+Encoding: UTF-8
+ByteCompile: true
+Depends: 
+    R (>= 3.5.0)
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
