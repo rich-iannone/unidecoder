@@ -1,4 +1,4 @@
-<img src="inst/unidecoder.png" width="100%">
+<img src="man/figures/unidecoder.png" width="100%">
 
 While Unicode characters are undeniably important, there can be occasions where you need text only in US-ASCII format. This is where the **R** package **unidecoder** can help. If you provide text to **unidecoder** along with the input language, it will replace accented letters, ligatures, and other Unicode characters with US-ASCII equivalents.
 
